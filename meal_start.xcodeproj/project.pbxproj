@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4F30A77C1D4AC847008A409C /* OrderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30A77B1D4AC847008A409C /* OrderTableView.swift */; };
 		4F47C9DD1D4B2B3000918041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F47C9DC1D4B2B3000918041 /* Main.storyboard */; };
-		4F47C9F91D4B2D8500918041 /* SnapKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 4F47C9E91D4B2CA300918041 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4FAA1D931BD2DF650010923C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA1D921BD2DF650010923C /* AppDelegate.swift */; };
 		4FAA1D9A1BD2DF650010923C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FAA1D991BD2DF650010923C /* Assets.xcassets */; };
 		4FAA1D9D1BD2DF650010923C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAA1D9B1BD2DF650010923C /* LaunchScreen.storyboard */; };
@@ -19,62 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4F47C9E81D4B2CA300918041 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F47C9DE1D4B2CA300918041 /* SnapKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EEBCC9D819CC627D0083B827;
-			remoteInfo = "SnapKit iOS";
-		};
-		4F47C9EA1D4B2CA300918041 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F47C9DE1D4B2CA300918041 /* SnapKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 537DCE921C35CC8800B5B899;
-			remoteInfo = "SnapKit tvOS";
-		};
-		4F47C9EC1D4B2CA300918041 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F47C9DE1D4B2CA300918041 /* SnapKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EECDB37A1AC0C9D4006BBC11;
-			remoteInfo = "SnapKit OSX";
-		};
-		4F47C9EE1D4B2CA300918041 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F47C9DE1D4B2CA300918041 /* SnapKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EEBCC9E219CC627E0083B827;
-			remoteInfo = "SnapKit iOS Tests";
-		};
-		4F47C9F01D4B2CA300918041 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F47C9DE1D4B2CA300918041 /* SnapKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 537DCEAF1C35D90A00B5B899;
-			remoteInfo = "SnapKit tvOS Tests";
-		};
-		4F47C9F21D4B2CA300918041 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F47C9DE1D4B2CA300918041 /* SnapKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = EECDB3841AC0C9D4006BBC11;
-			remoteInfo = "SnapKit OSX Tests";
-		};
-		4F47C9F41D4B2CA300918041 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F47C9DE1D4B2CA300918041 /* SnapKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 56A0DC091C859E30005973AB;
-			remoteInfo = "Example-iOS";
-		};
-		4F47C9F61D4B2D3E00918041 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F47C9DE1D4B2CA300918041 /* SnapKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = EEBCC9D719CC627D0083B827;
-			remoteInfo = "SnapKit iOS";
-		};
 		4FAA1DA41BD2DF650010923C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4FAA1D871BD2DF650010923C /* Project object */;
@@ -98,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4F47C9F91D4B2D8500918041 /* SnapKit.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,7 +50,6 @@
 /* Begin PBXFileReference section */
 		4F30A77B1D4AC847008A409C /* OrderTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableView.swift; sourceTree = "<group>"; };
 		4F47C9DC1D4B2B3000918041 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		4F47C9DE1D4B2CA300918041 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "../../Third-Party-Kit/SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		4FAA1D8F1BD2DF650010923C /* meal_start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meal_start.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAA1D921BD2DF650010923C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FAA1D991BD2DF650010923C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -156,24 +97,9 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		4F47C9DF1D4B2CA300918041 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4F47C9E91D4B2CA300918041 /* SnapKit.framework */,
-				4F47C9EB1D4B2CA300918041 /* SnapKit.framework */,
-				4F47C9ED1D4B2CA300918041 /* SnapKit.framework */,
-				4F47C9EF1D4B2CA300918041 /* SnapKit iOS Tests.xctest */,
-				4F47C9F11D4B2CA300918041 /* SnapKit tvOS Tests.xctest */,
-				4F47C9F31D4B2CA300918041 /* SnapKit OSX Tests.xctest */,
-				4F47C9F51D4B2CA300918041 /* Example-iOS.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		4FAA1D861BD2DF650010923C = {
 			isa = PBXGroup;
 			children = (
-				4F47C9DE1D4B2CA300918041 /* SnapKit.xcodeproj */,
 				4FAA1D911BD2DF650010923C /* meal_start */,
 				4FAA1DA61BD2DF650010923C /* meal_startTests */,
 				4FAA1DB11BD2DF650010923C /* meal_startUITests */,
@@ -238,7 +164,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4F47C9F71D4B2D3E00918041 /* PBXTargetDependency */,
 			);
 			name = meal_start;
 			productName = meal_start;
@@ -316,12 +241,6 @@
 			mainGroup = 4FAA1D861BD2DF650010923C;
 			productRefGroup = 4FAA1D901BD2DF650010923C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 4F47C9DF1D4B2CA300918041 /* Products */;
-					ProjectRef = 4F47C9DE1D4B2CA300918041 /* SnapKit.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				4FAA1D8E1BD2DF650010923C /* meal_start */,
@@ -330,58 +249,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		4F47C9E91D4B2CA300918041 /* SnapKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SnapKit.framework;
-			remoteRef = 4F47C9E81D4B2CA300918041 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4F47C9EB1D4B2CA300918041 /* SnapKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SnapKit.framework;
-			remoteRef = 4F47C9EA1D4B2CA300918041 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4F47C9ED1D4B2CA300918041 /* SnapKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SnapKit.framework;
-			remoteRef = 4F47C9EC1D4B2CA300918041 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4F47C9EF1D4B2CA300918041 /* SnapKit iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SnapKit iOS Tests.xctest";
-			remoteRef = 4F47C9EE1D4B2CA300918041 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4F47C9F11D4B2CA300918041 /* SnapKit tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SnapKit tvOS Tests.xctest";
-			remoteRef = 4F47C9F01D4B2CA300918041 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4F47C9F31D4B2CA300918041 /* SnapKit OSX Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "SnapKit OSX Tests.xctest";
-			remoteRef = 4F47C9F21D4B2CA300918041 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4F47C9F51D4B2CA300918041 /* Example-iOS.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = "Example-iOS.app";
-			remoteRef = 4F47C9F41D4B2CA300918041 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		4FAA1D8D1BD2DF650010923C /* Resources */ = {
@@ -440,11 +307,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4F47C9F71D4B2D3E00918041 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "SnapKit iOS";
-			targetProxy = 4F47C9F61D4B2D3E00918041 /* PBXContainerItemProxy */;
-		};
 		4FAA1DA51BD2DF650010923C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4FAA1D8E1BD2DF650010923C /* meal_start */;
@@ -505,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -544,7 +406,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,7 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = meal_start/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Z-Latte.meal-start";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -572,7 +434,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = meal_start/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Z-Latte.meal-start";
 				PRODUCT_NAME = "$(TARGET_NAME)";
