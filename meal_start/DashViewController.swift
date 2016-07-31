@@ -88,7 +88,12 @@ class DashTopView: UIView, UITableViewDataSource, UITableViewDelegate {
 }
 
 // 底部view：两个可以切换的button，加最下面一个TableView显示当前或历史订单
-class DashBotView: UIView {
+class DashBotView: UIView, UITableViewDelegate, UITableViewDataSource {
+    
+    var tableView: UITableView = {
+        let tv = UITableView()
+        return tv
+    }()
     
     var mealLabel: UILabel = {
         let label = UILabel()
@@ -117,6 +122,12 @@ class DashBotView: UIView {
         self.addSubview(mealLabel)
         self.addSubview(leftBtn)
         self.addSubview(rightBtn)
+        
+        self.addSubview(tableView)
+        tableView.registerClass(OrderCell.self, forCellReuseIdentifier: "OrderCell")
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.tableFooterView = UIView()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -139,8 +150,26 @@ class DashBotView: UIView {
             make.right.equalTo(self)
             make.top.equalTo(self).offset(50)
         }
+        
+        tableView.snp_makeConstraints { (make) in
+            make.left.right.bottom.equalTo(self).offset(0)
+            make.top.equalTo(rightBtn.snp_bottom).offset(0)
+        }
     }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 8
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("OrderCell", forIndexPath: indexPath) as! OrderCell
+        cell.configure(["OrderImage", "Spicy Noodle", "Enjoyed"])
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 60
+    }
 }
 
 
@@ -223,7 +252,12 @@ class DashViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return 300
+        switch indexPath.row {
+        case 0:
+            return 300
+        default:
+            return 500
+        }
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
@@ -234,19 +268,83 @@ class DashViewController: UIViewController, UITableViewDelegate, UITableViewData
     
 }
 
-// 主界面的cell
+// 主界面的cell：其实一共2个
 class MainCell: UITableViewCell {
-    
-//    var topView: DashTopView!
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-
-//        topView = DashTopView()
-//        contentView.addSubview(topView)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+}
+
+
+// 底部view里的tableView里的cell
+class OrderCell: UITableViewCell {
+    
+    
+    var orderImage: UIImageView = {
+        let iv = UIImageView()
+        iv.contentMode = .ScaleAspectFill
+        iv.clipsToBounds = true
+        return iv
+    }()
+    
+    var titleLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = UIColor.darkGrayColor()
+        return label
+    }()
+    
+    var statusLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = UIColor.greenColor()
+        return label
+    }()
+    
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.contentView.addSubview(orderImage)
+        self.contentView.addSubview(titleLabel)
+        self.contentView.addSubview(statusLabel)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let width = self.frame.width
+        let height = self.frame.height
+        let imageWidth = height * 4 / 3
+        orderImage.snp_makeConstraints { (make) in
+            make.edges.equalTo(contentView).inset(UIEdgeInsetsMake(1, 1, 1, width - imageWidth))
+        }
+        
+        titleLabel.snp_makeConstraints { (make) in
+            make.left.equalTo(orderImage.snp_right).offset(5)
+            make.right.equalTo(contentView).offset(-10)
+            make.top.equalTo(contentView).offset(10)
+            make.height.equalTo(20)
+        }
+        
+        statusLabel.snp_makeConstraints { (make) in
+            make.left.equalTo(orderImage.snp_right).offset(5)
+            make.bottom.equalTo(contentView).offset(-5)
+            make.right.equalTo(contentView).offset(-10)
+            make.height.equalTo(20)
+        }
+    }
+    
+    func configure(orderInfo: [String]) {
+        self.orderImage.image = UIImage(named: orderInfo[0])
+        self.titleLabel.text = orderInfo[1]
+        self.statusLabel.text = orderInfo[2]
+    }
+
+    
+    
 }
