@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4F30A77C1D4AC847008A409C /* OrderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F30A77B1D4AC847008A409C /* OrderTableView.swift */; };
 		4F47C9DD1D4B2B3000918041 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F47C9DC1D4B2B3000918041 /* Main.storyboard */; };
+		4F6DB88A1D4F175100261EE4 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6DB8891D4F175100261EE4 /* OrderCell.swift */; };
 		4FAA1D931BD2DF650010923C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAA1D921BD2DF650010923C /* AppDelegate.swift */; };
 		4FAA1D9A1BD2DF650010923C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FAA1D991BD2DF650010923C /* Assets.xcassets */; };
 		4FAA1D9D1BD2DF650010923C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FAA1D9B1BD2DF650010923C /* LaunchScreen.storyboard */; };
@@ -48,8 +48,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4F30A77B1D4AC847008A409C /* OrderTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableView.swift; sourceTree = "<group>"; };
 		4F47C9DC1D4B2B3000918041 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		4F6DB8891D4F175100261EE4 /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		4FAA1D8F1BD2DF650010923C /* meal_start.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = meal_start.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FAA1D921BD2DF650010923C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FAA1D991BD2DF650010923C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		4F30A77A1D4AC82B008A409C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4F30A77B1D4AC847008A409C /* OrderTableView.swift */,
+				4F6DB8891D4F175100261EE4 /* OrderCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -283,7 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FDC0E441D4A2DDC00A1618A /* DashViewController.swift in Sources */,
-				4F30A77C1D4AC847008A409C /* OrderTableView.swift in Sources */,
+				4F6DB88A1D4F175100261EE4 /* OrderCell.swift in Sources */,
 				4FAA1D931BD2DF650010923C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
